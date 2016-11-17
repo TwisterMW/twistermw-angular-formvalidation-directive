@@ -10,9 +10,9 @@ Angular JS Directive for forms validation. It uses ng-messages directive
 - Bootstrap
 
 # Installation
-```bower install -g twistermw-angular-formvalidation```
+```bower install -g twistermw-angular-formvalidation-directive```
 or
-```bower install -g twistermw-angular-formvalidation --save``` if you want to save on your bower.json file
+```bower install -g twistermw-angular-formvalidation-directive --save``` if you want to save on your bower.json file
 
 # Usage
 
