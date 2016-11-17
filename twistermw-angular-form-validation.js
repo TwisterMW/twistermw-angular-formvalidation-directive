@@ -10,20 +10,17 @@
 
         return {
             restrict: 'E',
-            require: [ 'inputName', 'errorMessagesUrl' ],
             scope: {
                 inputName: '=',
                 errorMessagesUrl: '=',
                 templateUrl: '='
             },
-            link: function(scope, element, attrs){
-                console.log(attrs);
-                var template = (attrs.templateUrl !== undefined)
-                    ? attrs.template
+            templateUrl: function(elem, attrs){
+                var tpl = (attrs.templateUrl !== undefined)
+                    ? attrs.templateUrl
                     : BASE_URL + 'twistermw-angular-form-validation-tpl.html';
 
-                element.html(template).show();
-                $compile(element.contents())(scope);
+                return tpl;
             }
         }
     }
