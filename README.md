@@ -27,7 +27,7 @@ First we include the library following angularjs dependency:
     <script src="bower_components/twistermw-angular-form-validation/twistermw-angular-form-validation.js"></script>
 ```
 
-You need also register the 'App.formValidation' angular module on your main application module or the parent module that will contain the form:
+You need also register the 'ngMessages' module and also 'App.formValidation' on your main application module or the parent module that will contain the form:
 
 ```js
     angular
