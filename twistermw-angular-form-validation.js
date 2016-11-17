@@ -3,20 +3,27 @@
 
     angular
         .module('App.formValidation', [])
-        .directive('formValidationControl', formValidationControl);
+        .directive('formValidationControl', ['$compile', formValidationControl]);
 
-    function formValidationControl(){
+    function formValidationControl($compile){
         var BASE_URL = "bower_components/twistermw-angular-formvalidation-directive/";
 
         return {
             restrict: 'E',
-            templateUrl: BASE_URL + 'twistermw-angular-form-validation-tpl.html',
+            require: [ 'inputName', 'errorMessagesUrl' ],
             scope: {
                 inputName: '=',
-                errorMessagesUrl: '='
+                errorMessagesUrl: '=',
+                templateUrl: '='
             },
-            link: function(scope){
-                console.log(scope);
+            link: function(scope, element, attrs){
+                console.log(attrs);
+                var template = (attrs.templateUrl !== undefined)
+                    ? attrs.template
+                    : BASE_URL + 'twistermw-angular-form-validation-tpl.html';
+
+                element.html(template).show();
+                $compile(element.contents())(scope);
             }
         }
     }
