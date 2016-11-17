@@ -98,7 +98,7 @@ On this line ```<div class="input-group" data-ng-class="vm.inputHasError(mainFor
 
 Then the bootstrap class will be applied when the input has an error.
 
-PD: If you are including that dependency by wiredep you need to add the proper override section on your bower.json like this:
+PD: If you are including that dependency by grunt-wiredep or some automatic dependency injector which uses bower.json file you need to add the proper override section on it like this:
 
 ```json
 "overrides": {
