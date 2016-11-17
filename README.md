@@ -7,7 +7,7 @@ Angular JS Directive for forms validation. It uses ng-messages directive
 - Node + NPM
 - Bower
 
-# Dependences
+# Dependencies
 - AngularJS
 - Angular ngMessages
 - Bootstrap
