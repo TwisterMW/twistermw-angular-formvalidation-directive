@@ -7,7 +7,7 @@ Angular JS Directive for forms validation. It uses ng-messages directive
 - Node + NPM
 - Bower
 
-# Dependendes
+# Dependences
 - AngularJS
 - Angular ngMessages
 - Bootstrap
@@ -15,7 +15,7 @@ Angular JS Directive for forms validation. It uses ng-messages directive
 # Installation
 ```bower install -g twistermw-angular-formvalidation-directive```
 or
-```bower install -g twistermw-angular-formvalidation-directive --save``` if you want to save on your bower.json file
+```bower install -g twistermw-angular-formvalidation-directive --save``` if you want to save the dependency on your bower.json file
 
 # Usage
 
