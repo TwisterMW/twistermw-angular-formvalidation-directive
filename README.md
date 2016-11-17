@@ -91,6 +91,8 @@ Then we can use the directive including it below of each input inside of a form:
 On this line ```<div class="input-group" data-ng-class="vm.inputHasError(mainForm.email)">``` we put an ngClass that in the controller could be something like this:
 
 ```js
+    vm.inputHasError = inputHasError;
+
     function inputHasError(input){ return (input.$touched && input.$invalid) ? 'has-error' : ''; }
 ```
 
