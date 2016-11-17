@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('App.formValidation')
+        .module('App.formValidation', [])
         .directive('formValidationControl', formValidationControl);
 
     function formValidationControl(){

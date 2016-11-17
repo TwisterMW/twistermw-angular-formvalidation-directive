@@ -103,7 +103,7 @@ PD: If you are including that dependency by grunt-wiredep or some automatic depe
 ```json
 "overrides": {
     "twistermw-angular-formvalidation-directive": {
-      "main": ["twistermw-angular-form-validation-app.module.js", "twistermw-angular-form-validation.js"]
+      "main": ["twistermw-angular-form-validation.js"]
     }
   }
 ```
