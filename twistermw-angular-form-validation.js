@@ -6,11 +6,9 @@
         .directive('formValidationControl', formValidationControl);
 
     function formValidationControl(){
-        var BASE_URL = 'app/components/views/directives/';
-
         return {
             restrict: 'E',
-            templateUrl: BASE_URL + 'formValidation-directive-tpl.html',
+            templateUrl: 'twistermw-angular-form-validation-tpl.html',
             scope: {
                 inputName: '=',
                 errorMessagesUrl: '='
