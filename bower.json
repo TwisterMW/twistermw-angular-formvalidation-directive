@@ -1,0 +1,17 @@
+{
+  "name": "twistermw-angular-formvalidation-directive",
+  "homepage": "https://github.com/TwisterMW/twistermw-angular-formvalidation-directive",
+  "authors": [
+    "Marc Hernández <marc.hernandez@twiscript.com>"
+  ],
+  "description": "Angular JS Directive for forms validation. It uses ng-messages directive",
+  "main": "twistermw-angular-form-validation.js",
+  "keywords": [
+    "AngularJS",
+    "directive",
+    "validation",
+    "form",
+    "twistermw"
+  ],
+  "license": "MIT"
+}
