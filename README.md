@@ -7,6 +7,7 @@ Angular JS Directive for forms validation. It uses ng-messages directive
 
 # Dependendes
 - AngularJS
+- Angular ngMessages
 - Bootstrap
 
 # Installation
@@ -20,6 +21,7 @@ First we include the library following angularjs dependency:
 
 ```js
     <script src="bower_components/angularjs/angular.min.js"></script>
+    <script src="bower_components/angular-ngmessages/angular-ngmessages.min.js"></script>
     <script src="bower_components/twistermw-angular-form-validation/twistermw-angular-form-validation.js"></script>
 ```
 
@@ -28,6 +30,7 @@ You need also register the 'App.formValidation' angular module on your main appl
 ```js
     angular
         .module('App', [
+            'ngMessages',
             'App.formValidation'
         ]);
 ```
