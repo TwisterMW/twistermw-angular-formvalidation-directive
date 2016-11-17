@@ -3,9 +3,9 @@
 
     angular
         .module('App.formValidation', [])
-        .directive('formValidationControl', ['$compile', formValidationControl]);
+        .directive('formValidationControl', formValidationControl);
 
-    function formValidationControl($compile){
+    function formValidationControl(){
         var BASE_URL = "bower_components/twistermw-angular-formvalidation-directive/";
 
         return {
