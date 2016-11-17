@@ -1,4 +1,4 @@
-<iframe src="//benschwarz.github.io/bower-badges/embed.html?pkgname=twistermw-angular-formvalidation-directive" width="160" height="32" allowtransparency="true" frameborder="0" scrolling="0">
+<img src="//benschwarz.github.io/bower-badges/badge@2x.png" width="130" height="30">
 
 # twistermw-angular-formvalidation-directive
 Angular JS Directive for forms validation. It uses ng-messages directive
