@@ -23,7 +23,7 @@ First we include the library following angularjs dependency:
 
 ```js
     <script src="bower_components/angularjs/angular.min.js"></script>
-    <script src="bower_components/angular-ngmessages/angular-ngmessages.min.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.min.js"></script>
     <script src="bower_components/twistermw-angular-form-validation/twistermw-angular-form-validation.js"></script>
 ```
 
@@ -88,7 +88,7 @@ Then we can use the directive including it below of each input inside of a form:
 - Note the argument novalidate at the form element
 - Note that the input has an ngModel directive applied
 
-On this line '<div class="input-group" data-ng-class="vm.inputHasError(mainForm.email)">' we put an ngClass that in the controller could be something like this:
+On this line ```<div class="input-group" data-ng-class="vm.inputHasError(mainForm.email)">``` we put an ngClass that in the controller could be something like this:
 
 ```js
     function inputHasError(input){ return (input.$touched && input.$invalid) ? 'has-error' : ''; }
