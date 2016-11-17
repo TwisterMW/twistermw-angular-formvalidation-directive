@@ -6,9 +6,11 @@
         .directive('formValidationControl', formValidationControl);
 
     function formValidationControl(){
+        var BASE_URL = "bower_components/twistermw-angular-formvalidation-directive/";
+
         return {
             restrict: 'E',
-            templateUrl: 'twistermw-angular-form-validation-tpl.html',
+            templateUrl: BASE_URL + 'twistermw-angular-form-validation-tpl.html',
             scope: {
                 inputName: '=',
                 errorMessagesUrl: '='
