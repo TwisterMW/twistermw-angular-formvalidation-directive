@@ -92,4 +92,14 @@ On this line '<div class="input-group" data-ng-class="vm.inputHasError(mainForm.
     function inputHasError(input){ return (input.$touched && input.$invalid) ? 'has-error' : ''; }
 ```
 
-Then the bootstrap class will be applied when the input has an error. 
+Then the bootstrap class will be applied when the input has an error.
+
+PD: If you are including that dependency by wiredep you need to add the proper override section on your bower.json like this:
+
+```json
+"overrides": {
+    "twistermw-angular-formvalidation-directive": {
+      "main": ["twistermw-angular-form-validation-app.module.js", "twistermw-angular-form-validation.js"]
+    }
+  }
+```
