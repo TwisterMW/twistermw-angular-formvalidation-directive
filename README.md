@@ -98,7 +98,17 @@ On this line ```<div class="input-group" data-ng-class="vm.inputHasError(mainFor
 
 Then the bootstrap class will be applied when the input has an error.
 
-PD: If you are including that dependency by grunt-wiredep or some automatic dependency injector which uses bower.json file you need to add the proper override section on it like this:
+If you want to use your own template for directive you can provide the optional parameter templateUrl like this:
+
+```html
+    <form-validation-control input-name="mainForm.email" error-messages-url="vm.formValidationErrorsUrl" template-url="path/to/your/template.html"></form-validation-control>
+```
+
+You need to put the template url as string literally.
+
+
+PD:
+** Note: If you are including that dependency by grunt-wiredep or some automatic dependency injector which uses bower.json file you need to add the proper override section on it like this:
 
 ```json
 "overrides": {
