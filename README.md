@@ -23,6 +23,15 @@ First we include the library following angularjs dependency:
     <script src="bower_components/twistermw-angular-form-validation/twistermw-angular-form-validation.js"></script>
 ```
 
+You need also register the 'App.formValidation' angular module on your main application module or the parent module that will contain the form:
+
+```js
+    angular
+        .module('App', [
+            'App.formValidation'
+        ]);
+```
+
 The directive is invoked by that way:
 
 ```html
@@ -47,7 +56,7 @@ We declare so many validations as we want and assign an ng-message for each one.
 In the controller we can store the url of the template like this:
 
 ```js
-    vm.formValidationErrorsUrl = 'app/components/views/error-messages/formValidationErrors.html';
+    vm.formValidationErrorsUrl = 'your-path/your-ngMessages-template.html';
 ```
 
 Then we can use the directive including it below of each input inside of a form:
