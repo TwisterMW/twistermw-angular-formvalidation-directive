@@ -9,8 +9,8 @@ Angular JS Directive for forms validation. It uses ng-messages directive
 
 # Dependencies
 - AngularJS
-- Angular ngMessages
-- Bootstrap
+- Angular Messages
+- Bootstrap (Optional, but needed if you use the default directive template)
 
 # Installation
 ```bower install -g twistermw-angular-formvalidation-directive```
@@ -52,7 +52,6 @@ As you can see the second argument of the directive is a url of a ngMessages tem
     <p class="text-danger" ng-message="required">This field is required</p>
     <p class="text-danger" ng-message="minlength">This field is too short</p>
     <p class="text-danger" ng-message="maxlength">This field is too long</p>
-    <p class="text-danger" ng-message="required">This field is required</p>
     <p class="text-danger" ng-message="email">This needs to be a valid email</p>
 ```
 
